@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 6.25%;     /* 1rem = 1px */
+}
+
+:root {
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+    --Red-card: hsl(0, 78%, 62%);
+    --Cyan-card: hsl(180, 62%, 55%);
+    --Orange-card: hsl(34, 97%, 64%);
+    --Blue-card: hsl(212, 86%, 64%);
+}
+
+body {
+    background-color: var(--Very-Light-Gray);
+    font-family: 'Poppins', sans-serif;    
+}
+
+main {
+    margin: 50px 0px;
+}
+
+.text__contaner {
+    width: 80%;
+    min-width: 320px;
+    max-width: 500px;
+    margin: 0px auto 60px;
+    text-align: center;
+    color: var(--Very-Dark-Blue);
+}
+
+.text__container--text-one {
+    font-size: clamp(22rem, 5vw, 29rem);
+    font-weight: 400;
+}
+
+.text__container--text-two {
+    margin-top: 10px;
+    font-size: clamp(23rem, 5vw , 30rem);
+    font-weight: 600;
+}
+
+.text__container--text-three {
+    max-width: 380px;
+    margin: 20px auto;
+    font-size: clamp(15rem, 3vw, 20rem);
+    font-weight: 200;
+    color: var(--Grayish-Blue);
+}
+
+.card__container {
+    width: 75%;
+    height: 200px;
+    max-width: 315px;
+    margin: 20px auto 0px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5px;
+    border-top: 4px solid var(--Cyan-card);
+    box-shadow: hsl(229deg 6% 66%) 0px 4px 7px;
+}
+
+.card__container-text--tittle {
+    color: var(--Very-Dark-Blue);
+    font-size: clamp(18rem, 5vw, 21rem);
+    font-weight: 600;
+}
+
+.card__container-text--text {
+    font-size: clamp(12rem, 3vw, 15rem);
+    font-weight: 200;
+    margin-top: 8px;
+    color: var(--Grayish-Blue);
+}
+
+.card__container-icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card__container-icons img {
+    width: 20%;
+}
+
+.builder-card {
+    border-top: 4px solid var(--Red-card);
+}
+
+.karma-card {
+    border-top: 4px solid var(--Orange-card);
+}
+
+.calculator-card {
+    border-top: 4px solid var(--Blue-card);
+}
+
+
+.attribution {
+    padding-bottom: 20px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media (min-width: 1300px) {
+    section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text__contaner {
+        max-width: 880px;
+    }
+    
+    .text__container--text-one {
+        font-size: clamp(22rem, 5vw, 34rem);
+    }
+    
+    .text__container--text-two {
+        font-size: clamp(23rem, 5vw , 35rem);
+    }
+    
+    .text__container--text-three {
+        max-width: 100%;
+        font-size: clamp(15rem, 3vw, 25rem);
+    }
+
+    .card__container {
+        width: 100%;
+        max-width: 311px;
+        margin: 20px 14px 0px;
+    }
+
+    .attribution {
+        font-size: 14px;
+    }
+
+    
+}
